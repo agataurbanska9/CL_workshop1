@@ -1,8 +1,67 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-color: #08a6e4;
+    --completive-color: #fb3b64;
+    --secondary-color: #55dfb4;
+    --dark-color: #000000;
+    --shadow-first: #707070;
+    --shadow-second: #95989a;
+    --shadow-third: #a5a5a5;
+    --light-color: #ffffff;
+}
+.container{
+    margin: 0 auto;
+    width: 1348px;
 }
 
-.container {
-    margin: 0 auto;
-    /*width: 1200px;*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-header{
+    width: 100vw;
+    /*line-height: 70px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*border-bottom: 1px solid black;*/
+    box-shadow: 0 8px 5px -10px var(--dark-color);
+}
+.header.container{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-nav{
+    display: flex;
+    /*justify-content: space-evenly;*/
+}
+.page-nav-list{
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+
+    /*color: var(--dark-color);*/
+    /*nadpisuje mi tutaj color z resesetu*/
+}
+
+.page-nav a{
+
+    padding-right: 95px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*border-bottom: 2px solid black;*/
+}
+header .logo {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--primary-color)
+
 }
