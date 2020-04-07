@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-size: 10px;
+}
 :root{
     --primary-color: #08a6e4;
     --completive-color: #fb3b64;
@@ -12,56 +15,74 @@
     --shadow-second: #95989a;
     --shadow-third: #a5a5a5;
     --light-color: #ffffff;
+    --primary-font-family: 'Open Sans', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
 }
 .container{
     margin: 0 auto;
     width: 1348px;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
-
-.page-header{
-    width: 100vw;
-    /*line-height: 70px;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*border-bottom: 1px solid black;*/
-    box-shadow: 0 8px 5px -10px var(--dark-color);
-}
-.header.container{
-    height: 70px;
+header div {
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    /*line-height: ;*/
+    height: 9.6vh;
+    font-size: 3.2em;
+    /*text-decoration: none;*/
+
+}
+.header_logo {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--secondary-font-family);
+    /*font-size: 32px;*/
+    display: flex;
+    align-items: center;
+    padding-left: 10vh;
+}
+.page_nav{
+    display: flex;
     align-items: center;
 }
-.page-nav{
+
+.page_nav_list {
     display: flex;
-    /*justify-content: space-evenly;*/
+    /*flex-direction: row;*/
+    padding-right: 10vh;
+    /*align-items: center;*/
+
+
 }
-.page-nav-list{
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 15px;
+.page_nav_list li {
+    /*3vw; !* do zmiany póżniej*!*!*/
     display: flex;
-
-    /*color: var(--dark-color);*/
-    /*nadpisuje mi tutaj color z resesetu*/
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 9.6vh;C
 }
-
-.page-nav a{
-
-    padding-right: 95px;
+ul.page_nav_list li a {
+    line-height: 15px;
     text-decoration: none;
+    color: var(--dark-color); /*nadpisuje kolor ze stylesheeta googla*/
+    font-family: var(--primary-font-family);
     text-transform: uppercase;
-    /*border-bottom: 2px solid black;*/
-}
-header .logo {
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: 300;
-    color: var(--primary-color)
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    /*align-items: center;*/
 
 }
+ul.page_nav_list li:hover {
+    border-bottom: 2px solid green;
+    /*border-bottom-color: green;*/
+
+
+}
+/* a[href="#"] {*/
+/*   */
+
+/*}*/
+
