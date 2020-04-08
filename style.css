@@ -24,7 +24,7 @@ body {
     width: 1348px;
 }
 
-/*-----section1: header & nav*/
+/*-----header & nav*/
 .page_header {
     box-shadow: 0 1px 10px var(--shadow-third);
 }
@@ -62,7 +62,7 @@ header div {
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
-    height: 9.6vh;
+    height: 7vh;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -72,9 +72,10 @@ ul.page_nav_list li a {
     color: var(--shadow-third);
     font-family: var(--primary-font-family);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: .7rem;
     font-weight: 700;
     display: flex;
+    letter-spacing: 2px;
 }
 ul.page_nav_list li:hover {
     border-bottom: 4px solid var(--primary-color);
@@ -83,7 +84,7 @@ ul.page_nav_list li:hover a{
     color: var(--b-color);
 }
 
-/*----section2: banner*/
+/*----banner*/
 .banner {
     display: inline-block;
     text-align: center;
@@ -113,8 +114,55 @@ ul.page_nav_list li:hover a{
     padding: 1.5rem 10rem;
 }
 .banner_img {
-    height: 594px;
+    height: 30rem;
     width: 100%;
     background: transparent url('assets/Background.png') 0% 0% no-repeat padding-box;
     background-position: center;
+}
+
+/*----main section*/
+.first_section_data{
+    display: flex;
+    justify-content: space-evenly;
+}
+.first_section_data img {
+    position: absolute;
+    padding-bottom: 13rem;
+}
+.first_section_title {
+    font-family: var(--secondary-font-family);
+    font-size: 2.5rem;
+    padding: 7rem 0;
+}
+.box {
+    font-family: var(--secondary-font-family);
+    padding: 20px;
+    line-height: 25px;
+}
+.box h2 { /*box number*/
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.box h1 {
+    font-size: 17px;
+    color: var(--shadow-third);
+}
+.entries .circle {
+    background: var(--completive-color);
+}
+.products .circle {
+    background: var(--primary-color);
+}
+.posts .circle {
+    background: var(--secondary-color);
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.2rem;
+    text-align: center;
+
 }
