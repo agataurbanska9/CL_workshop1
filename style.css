@@ -164,5 +164,21 @@ ul.page_nav_list li:hover a{
     height: 4.2rem;
     width: 4.2rem;
     text-align: center;
+}
 
+/*----section with vertically aligned boxes*/
+.second_section {
+    background-color: var(--shadow-second);
+}
+.second_section h1 {
+    font-family: var(--secondary-font-family);
+    font-size: 36px;
+}
+.second_section p{
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+}
+.content_box {
+    /*background-color: var(--w-color);*/
+    display: flex;
 }
