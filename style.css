@@ -11,11 +11,13 @@ body {
     --primary-color: #08a6e4;
     --completive-color: #fb3b64;
     --secondary-color: #55dfb4;
-    --b-color: #000000; /*ten kolor nadpisuje*/
+    --b-color: #000000;
     --shadow-first: #707070;
     --shadow-second: #95989a;
     --shadow-third: #a5a5a5;
+    --shadow-fourth :#F7F7F7;
     --w-color: #ffffff;
+    --border-white: #E8E9ED;
     --primary-font-family: 'Open Sans', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
 }
@@ -52,12 +54,9 @@ header div {
 }
 .page_nav_list {
     display: flex;
-    /*flex-direction: row;*/
     padding-right: 10vh;
-    /*align-items: center;*/
 }
 .page_nav_list li {
-    /*3vw; !* do zmiany póżniej*!*!*/
     display: flex;
     align-items: center;
     padding-right: 15px;
@@ -121,6 +120,9 @@ ul.page_nav_list li:hover a{
 }
 
 /*----main section*/
+.first_section{
+    padding-bottom: 9rem;
+}
 .first_section_data{
     display: flex;
     justify-content: space-evenly;
@@ -167,18 +169,165 @@ ul.page_nav_list li:hover a{
 }
 
 /*----section with vertically aligned boxes*/
+.second_section-background{
+    width: 100vw;
+    background-color: var(--shadow-fourth);
+}
 .second_section {
-    background-color: var(--shadow-second);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 .second_section h1 {
     font-family: var(--secondary-font-family);
-    font-size: 36px;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    width: 23rem;
 }
 .second_section p{
     font-family: var(--primary-font-family);
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem; /*do manipulacji*/
+    border-bottom: 4px solid red; /*do zmiany kolor  dla poszczególnych sekcji*/
 }
 .content_box {
-    /*background-color: var(--w-color);*/
+    background-color: var(--w-color);
     display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin: 37px;
+    border: 1px solid var(--border-white);
+    border-radius: 5px;
 }
+.content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 35rem;
+    padding: 35px;
+}
+.content_pic{
+    position: relative;
+}
+.content_pic img {
+    position: relative;
+    width: 25rem;
+    z-index: 1;
+}
+.content_pic div.rectangle{
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    z-index: 0;
+}
+.content_pic div.circle2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+    z-index: 0;
+
+}
+.content_box brand {
+
+}
+.content_box brand .content_text{
+    border: 1px solid var(--border-white);
+    border-radius: 5px;
+
+}
+.content_box brand .content_pic{
+    border: 1px solid var(--border-white);
+    border-radius: 5px;
+}
+.rectangle {
+    display: inline-block;
+    height: 14rem;
+    width: 14rem;
+    background: var(--completive-color);
+    border-radius: 3rem;
+    transform: rotate(45deg);
+}
+.circle2 {
+    display: inline-block;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+img[src*="Mac"] {
+    position: absolute;
+    right: 6rem;
+    top: 6rem;
+}
+img[src*="Phone"] {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+}
+/*price boxes*/
+.third_section{
+    padding: 100px 0;
+}
+.third_section h1 {
+    font-family: var(--secondary-font-family);
+    font-size: 36px;
+}
+.price_boxes {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.price_box{
+    width: 371px;
+    height: 461px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.price_box:nth-child(1) {
+    border: 1px solid var(--completive-color);
+}
+.price_box:nth-child(1) .price{
+    color: var(--completive-color);
+}
+
+.price_box:nth-child(2) {
+    border: 1px solid var(--primary-color);
+    margin: 0 57px;
+ }
+.price_box:nth-child(2) .price{
+    color: var(--primary-color);
+}
+.price_box:nth-child(3) {
+    border: 1px solid var(--secondary-color);
+}
+.price_box:nth-child(3) .price{
+    color: var(--secondary-color);
+}
+.price_box .pricing_plan {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 21px;
+}
+.price_box .price {
+    font-family: var(--primary-font-family);
+    font-size: 46px;
+    font-weight: 300;
+}
+.price_box .limited {
+    font-family: var(--secondary-font-family);
+    font-size: 12px;
+    font-weight: 700;
+}
+.price_box ul {
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+}
+.price_box ul li{
+    line-height: 2rem;
+}
+.support_list i[]
