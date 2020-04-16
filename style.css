@@ -279,14 +279,17 @@ img[src*="Phone"] {
     display: flex;
     justify-content: center;
     padding: 50px 0;
+    align-items: center;
 }
 .price_box{
+    /*tylko dla 2 boxa*/
     width: 371px;
     height: 461px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 .price_box:nth-child(1) {
     border: 1px solid var(--completive-color);
@@ -294,19 +297,30 @@ img[src*="Phone"] {
 .price_box:nth-child(1) .price{
     color: var(--completive-color);
 }
-
+.price_box:nth-child(1) a{
+    background-color: var(--completive-color);
+}
 .price_box:nth-child(2) {
     border: 1px solid var(--primary-color);
     margin: 0 57px;
- }
+    box-shadow: 5px 10px 27px #07ACE629;
+    width: 405px;
+    height: 500px;
+}
 .price_box:nth-child(2) .price{
     color: var(--primary-color);
+}
+.price_box:nth-child(2) a{
+    background-color: var(--primary-color);
 }
 .price_box:nth-child(3) {
     border: 1px solid var(--secondary-color);
 }
 .price_box:nth-child(3) .price{
     color: var(--secondary-color);
+}
+.price_box:nth-child(3) a{
+    background-color: var(--secondary-color);
 }
 .price_box .pricing_plan {
     font-family: var(--secondary-font-family);
@@ -330,4 +344,98 @@ img[src*="Phone"] {
 .price_box ul li{
     line-height: 2rem;
 }
-.support_list i[]
+.price_box ul li i[class*="square"]{
+    color: var(--secondary-color);
+}
+.price_box ul li i[class*="circle"]{
+    color: var(--completive-color);
+}
+.price_box a {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    /*margin-top: 2rem;*/
+}
+
+/*question section*/
+.question-section {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+.question-section div{
+    width: 400px;
+}
+.question-content{
+    text-align: left;
+}
+.question-content > *{
+    padding-bottom: 2.5rem;
+}
+.question-content h2 {
+    font-size: 50px;
+    font-family: var(--secondary-font-family);
+}
+.question-content p {
+    font-size: 16px;
+    font-family: var(--primary-font-family);
+}
+.question-content div.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.question-content .contact p{
+    font-weight: 600;
+    font-family: var(--primary-font-family);
+    color: var(--shadow-third);
+}
+.question-content .contact i{
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 5px;
+}
+.form-field{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+}
+.form-field label{
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+.form-field input {
+    width: 400px;
+    height: 40px;
+    border: transparent;
+    border-bottom: 1px var(--shadow-third) solid;
+}
+.rodo-checkbox {
+    display: flex;
+    padding-bottom: 1rem;
+}
+.rodo-checkbox input{
+    font-size: 20px;
+}
+.rodo-checkbox label{
+    font-family: var(--primary-font-family);
+    font-size: 10px;
+    color: var(--shadow-first);
+    line-height: 1rem;
+    text-align: left;
+    padding-left: .5rem;
+}
+a.subscribe-button{
+    display: block;
+    line-height: 57px;
+    width: 226px;
+    height: 57px;
+    font-size: 13px;
+    margin-left: 10rem;
+}
