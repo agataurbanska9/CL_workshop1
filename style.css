@@ -377,8 +377,7 @@ img[src*="Phone"] {
     width: 165px;
     height: 50px;
     line-height: 50px;
-    font-weight: 300;
-    /*margin-top: 2rem;*/
+    font-size: 13px;
 }
 
 /*question section*/
